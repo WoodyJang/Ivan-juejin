@@ -1,0 +1,115 @@
+@keyframes loading-identifier {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(180deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(1);
+    }
+    75% {
+        transform: rotate(540deg) scale(1);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+
+.d-loading-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-loading {
+    width: 60rpx;
+    height: 60rpx;
+    position: relative;
+    animation: loading-identifier 2.5s infinite linear;
+}
+
+.d-loading .ball,
+.d-loading .line {
+    background-color: #28b7a3;
+}
+
+
+/* 中心球 */
+
+.d-loading .ball-0 {
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 10rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rpx;
+    margin-top: -10rpx;
+}
+
+
+/* 右上球 */
+
+.d-loading .ball-1 {
+    width: 16rpx;
+    height: 16rpx;
+    border-radius: 8rpx;
+    position: absolute;
+    right: 3rpx;
+    top: 0rpx;
+}
+
+
+/* 左上球 */
+
+.d-loading .ball-2 {
+    width: 14rpx;
+    height: 14rpx;
+    border-radius: 7rpx;
+    position: absolute;
+    top: 7rpx;
+    left: 7rpx;
+}
+
+
+/* 右下球 */
+
+.d-loading .ball-3 {
+    width: 15rpx;
+    height: 15rpx;
+    border-radius: 7.5rpx;
+    position: absolute;
+    right: 7rpx;
+    bottom: 7rpx;
+}
+
+
+/* 左下球 */
+
+.d-loading .ball-4 {
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 6rpx;
+    position: absolute;
+    left: 6rpx;
+    bottom: 8rpx;
+}
+
+.d-loading .line {
+    height: 2rpx;
+    width: 58rpx;
+    position: absolute;
+    top: 50%;
+    margin-top: -1rpx;
+}
+
+.d-loading .line-0 {
+    transform: rotate(45deg);
+}
+
+.d-loading .line-1 {
+    transform: rotate(135deg) translate(-5rpx, 0rpx);
+}

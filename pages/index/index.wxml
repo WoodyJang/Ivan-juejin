@@ -1,0 +1,10 @@
+<import src="../../../common/loading/index.wxml" />
+
+<view class='container'>
+  <view class='timeline'>
+    <postItemTwo list='{{list}}'></postItemTwo>
+  </view>
+  <block>
+    <template is="loading" />
+  </block>
+</view>

@@ -1,0 +1,13 @@
+<template name="loading">
+    <view class="d-loading-container">
+        <view class="d-loading">
+            <view class="ball ball-0"></view>
+            <view class="ball ball-1"></view>
+            <view class="ball ball-2"></view>
+            <view class="ball ball-3"></view>
+            <view class="ball ball-4"></view>
+            <view class="line line-0"></view>
+            <view class="line line-1"></view>
+        </view>
+    </view>
+</template>
