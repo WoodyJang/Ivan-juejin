@@ -1,10 +1,19 @@
-<import src="../../../common/loading/index.wxml" />
 
+<import src="../../components/loading/index.wxml" />
 <view class='container'>
   <view class='timeline'>
     <postItemTwo list='{{list}}'></postItemTwo>
   </view>
-  <block>
-    <template is="loading" />
-  </block>
+  <!-- 加载更多 -->
+  <view wx:if="{{loading}}" class="index-loading">
+    <view class="d-loading">
+      <view class="ball ball-0"></view>
+      <view class="ball ball-1"></view>
+      <view class="ball ball-2"></view>
+      <view class="ball ball-3"></view>
+      <view class="ball ball-4"></view>
+      <view class="line line-0"></view>
+      <view class="line line-1"></view>
+    </view>
+  </view>
 </view>

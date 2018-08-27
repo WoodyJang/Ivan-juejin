@@ -55,3 +55,9 @@
   height: 20rpx;
   margin-left: 40rpx;
 }
+
+.index-loading {
+    display: flex;
+    justify-content: center;
+    padding: 20rpx 0; 
+}

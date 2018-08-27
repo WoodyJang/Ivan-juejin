@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "掘金",
   "enablePullDownRefresh": true,
+  "onReachBottomDistance": 400,
   "usingComponents": {
     "postItemOne": "/components/postItemOne/postItemOne",
     "postItemTwo": "/components/postItemTwo/postItemTwo"

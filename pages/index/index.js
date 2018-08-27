@@ -17,11 +17,11 @@ Page({
   onPullDownRefresh() {
     this.getTimelineRequest(true)
   },
-  onReachBottom(){
-    this.setData({
+  async onReachBottom(){
+     this.setData({
       loading: true
     })
-    this.getTimelineRequest()
+    await this.getTimelineRequest()
     this.setData({
       loading: false
     })
